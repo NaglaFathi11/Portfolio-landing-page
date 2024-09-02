@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize.css helps to make styles consistent across different browsers -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome offline -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title -->
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <!-- Start Brand Name -->
+                <a class="navbar-brand" href="#">
+                    <div class="big-circle">
+                        <div class="clip-circle"></div>
+                        <div class="text">A</div>
+                    </div>
+                </a>
+                <!-- End Brand Name -->
+
+                <!-- Start Nav items -->
+                <ul class="navbar-nav navbaritems flex-row">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+                <!-- End Nav items -->
+
+                <!-- Start Offcanvas toggler -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End Offcanvas toggler -->
+
+                <!-- Start Offcanvas content -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn btn-primary" id="customMainButton">
+                            <i class="fa-solid fa-arrow-right" style="color: #ffffff; width:24px; height:24px;"></i>
+                            View My Resume</button>
+                        <div class="closetab">
+                            <button type="button" class="btn-close" id="custom-close-button" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <!-- Offcanvas-body -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                        <!-- Social media icons -->
+                        <p class="ms-3">Follow us on</p>
+                        <div class="social_media d-flex gap-4 ms-3">
+                            <div class="icon-box">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Offcanvas content -->
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start About -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <!-- col 1 -->
+                <div class="col-sm-12 col-lg-6 text">
+                    <p>Hello, <br>
+                        <span class="userName">Adam Zakob</span> <br>
+                        <span style="color: #25202F;"> a freelance UX Designer</span> <br> <br>
+                        <button class="btn btn-primary fw-medium" id="customMainButton"
+                            style="width:200px; height:60px;"> <a href="#contact">Let’s Talk</a> </button>
+                    </p>
+                </div>
+                <!-- col 2 -->
+                <div class="col-sm-12 col-lg-6 image">
+                    <img src="images/user-image.png" id="userImage" alt="not_found">
+                    <div class="point-container1"></div>
+                    <div class="point-container2"></div>
+                    <img src="images/about_shape1 (1).png" alt="not_found" class="about_shape1">
+                    <img src="images/about_shape1 (2).png" alt="not_found" class="about_shape2_1">
+                    <img src="images/about_shape1 (2).png" alt="not_found" class="about_shape2_2">
+                    <img src="images/about_shape1 (2).png" alt="not_found" class="about_shape2_3">
+                    <img src="images/about_shape(3).png" alt="not_found" class="about_shape3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Service -->
+    <div class="service" id="services">
+        <div class="container">
+            <div class="intro_text">
+                <p>Services</p>
+                <div class="under_line"></div>
+                <h4>What actually <br>
+                    I love to do</h4>
+            </div>
+            <div class="row mt-5">
+                <!-- col 1 -->
+                <div class="col-lg-4">
+                    <div class="icon_header d-flex gap-3 align-items-end">
+                        <div class="icon-bg">
+                            <img src="images/mobile_icon.svg" alt="not_found" class="svg-icon">
+                        </div>
+                        <h5>UX Research</h5>
+                    </div>
+                    <p class="mt-4 par_serv_row">New demos are continually added and buying a single license for Mak
+                        gives you access
+                        to all
+                        of
+                        what's shown below, plus everything that will be added in the future.</p>
+                </div>
+                <!-- col 2 -->
+                <div class="col-lg-4">
+                    <div class="icon_header d-flex gap-3 align-items-end">
+                        <div class="icon-bg">
+                            <img src="images/brand_icon.svg" alt="not_found">
+                        </div>
+                        <h5>Brand Design</h5>
+                    </div>
+                    <p class="mt-4  par_serv_row">New demos are continually added and buying a single license for Mak
+                        gives you access
+                        to all
+                        of
+                        what's shown below, plus everything that will be added in the future.</p>
+                </div>
+                <!-- col 3 -->
+                <div class="col-lg-4">
+                    <div class="icon_header d-flex gap-3 align-items-end">
+                        <div class="icon-bg">
+                            <img src="images/web_icon.svg" alt="not_found">
+                        </div>
+                        <h5>Web Development</h5>
+                    </div>
+                    <p class="mt-4  par_serv_row">New demos are continually added and buying a single license for Mak
+                        gives you access
+                        to all
+                        of
+                        what's shown below, plus everything that will be added in the future.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Start portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row">
+                <!-- col 1 -->
+                <div class="col-lg-6">
+                    <div class="intro_text">
+                        <p class="mt-5">Portfolio</p>
+                        <div class="under_line"></div>
+                        <h4>All Creative <br>
+                            Projects</h4>
+                    </div>
+                </div>
+                <!-- col 2 -->
+                <div class="col-lg-6 d-flex gap-3 align-items-center justify-content-end">
+                    <a href="#" class="explore_btn">Explore More</a>
+                    <i class="fa-solid fa-arrow-right fa-lg" style="color: #8643DC;"></i>
+                </div>
+            </div>
+
+            <div class="portfolio_img">
+                <!-- row 2 -->
+                <div class="row">
+                    <!-- col 1 -->
+                    <div class="col-lg-6">
+                        <img src="images/port_img1.png" alt="not_found" class="img-fluid">
+                    </div>
+                    <!-- col 2 -->
+                    <div class="col-lg-6">
+                        <img src="images/port_img2.png" alt="not_found" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End portfolio -->
+
+    <!-- Start Clients -->
+    <div class="clients">
+        <div class="container">
+            <div class="intro_text">
+                <p>Clients</p>
+                <div class="under_line"></div>
+                <h4>Big Deal <br>
+                    With</h4>
+            </div>
+
+            <div class="row justify-content-center gap-4 align-items-center my-5">
+                <!-- col 1 -->
+                <div class=" col-md-4 col-lg-2">
+                    <div class="box_shape" id="shape1">
+                        <img src="images/clients_img (1).png" alt="not_found" style="width: 50px; height: 50px;">
+                        <p>Slack</p>
+                    </div>
+                </div>
+                <!--col 2  -->
+                <div class=" col-md-4 col-lg-2">
+                    <div class="box_shape" id="shape2">
+                        <img src="images/clients_img(2).png" alt="not_found" style=" width:68.8px; height: 50px;">
+                        <p>Medium</p>
+                    </div>
+                </div>
+                <!--col 3  -->
+                <div class=" col-md-4 col-lg-2">
+                    <div class="box_shape" id="shape3">
+                        <img src="images/clients_img(3).png" alt="not_found"
+                            style="width: 50px; height: 50px; margin-left: auto;  margin-right: auto;">
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+                <!--col 4  -->
+                <div class=" col-md-4 col-lg-2">
+                    <div class="box_shape" id="shape4">
+                        <img src="images/clients_img(4).png" alt="not_found" style="width: 50px; height: 50px;">
+                        <p>Zeplin</p>
+                    </div>
+                </div>
+                <!--col 5  -->
+                <div class=" col-md-4 col-lg-2">
+                    <div class="box_shape" id="shape5">
+                        <img src="images/clients_img(5).png" alt="not_found" style="width: 43.85px; height: 50px;">
+                        <p>Shopify</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <!-- Text -->
+            <div class="intro_text">
+                <p>Testimonials</p>
+                <div class="under_line"></div>
+                <h4>What People<br>Says</h4>
+            </div>
+            <!-- Carousel -->
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row my-5">
+                            <!-- col 1 -->
+                            <div class="col-lg-3">
+                                <img src="images/testimonials_img (1).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-6 text-center">
+                                <img src="images/Quote.png" alt="not_found">
+                                <p style="line-height:32px; color: #636066;">Quote testimonials demonstrate support for
+                                    your product or feature from a user who has experience with it. This can be
+                                    significantly more effective than traditional advertising methods as most consumers
+                                    will trust.
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-3 d-grid justify-content-end">
+                                <img src="images/testimonials_img (2).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <!-- col 1  -->
+                            <div class="col-lg-4 d-grid align-items-end justify-content-center mb-3">
+                                <img src="images/testimonials_img (3).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-center text-center">
+                                <img src="images/testimonials_img (4).png" alt="not_found">
+                                <p class="testimonialsParg">Michal Joh <br>
+                                    <span>CEO of MZP</span>
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-end mb-5">
+                                <img src="images/testimonials_img (5).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row my-5">
+                            <!-- col 1 -->
+                            <div class="col-lg-3">
+                                <img src="images/testimonials_img (1).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-6 text-center">
+                                <img src="images/Quote.png" alt="">
+                                <p style="line-height:32px; color: #636066;">Quote testimonials demonstrate support for
+                                    your product or feature from a user who has experience
+                                    with it. This can be significantly more effective than traditional advertising
+                                    methods as most consumers will trust.
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-3 d-grid justify-content-end">
+                                <img src="images/testimonials_img (2).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <!-- col 1  -->
+                            <div class="col-lg-4 d-grid align-items-end justify-content-center  mb-3">
+                                <img src="images/testimonials_img (3).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-center text-center">
+                                <img src="images/testimonials_img (4).png" alt="not_found">
+                                <p class="testimonialsParg">Michal Joh <br>
+                                    <span>CEO of MZP</span>
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-end  mb-5">
+                                <img src="images/testimonials_img (5).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row my-5">
+                            <!-- col 1 -->
+                            <div class="col-lg-3">
+                                <img src="images/testimonials_img (1).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-6 text-center">
+                                <img src="images/Quote.png" alt="">
+                                <p style="line-height:32px; color: #636066;">Quote testimonials demonstrate support for
+                                    your product
+                                    or feature from a user who has experience with it. This can be significantly more
+                                    effective than traditional advertising methods as most consumers
+                                    will trust.
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-3 d-grid justify-content-end">
+                                <img src="images/testimonials_img (2).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <!-- col 1  -->
+                            <div class="col-lg-4 d-grid align-items-end justify-content-center  mb-3">
+                                <img src="images/testimonials_img (3).png" alt="not_found" class="blurry-image">
+                            </div>
+                            <!-- col 2 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-center text-center">
+                                <img src="images/testimonials_img (4).png" alt="not_found">
+                                <p class="testimonialsParg">Michal Joh <br>
+                                    <span>CEO of MZP</span>
+                                </p>
+                            </div>
+                            <!-- col 3 -->
+                            <div class="col-lg-4 d-grid justify-content-center align-items-end mb-5">
+                                <img src="images/testimonials_img (5).png" alt="not_found" class="blurry-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel-indicators  -->
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">.</button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2">.</button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3">.</button>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+
+    <!-- Start Blog -->
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <!-- col 1 -->
+                <div class="col-lg-2">
+                    <div class="intro_text">
+                        <p>Blog</p>
+                        <div class="under_line"></div>
+                        <h4>Get News<br>Feeds</h4>
+                    </div>
+                </div>
+                <!-- col 2 -->
+                <div class="col-lg-4">
+                    <div class="shape_img1">
+                    </div>
+                    <p class="shap1Text">20 June/2020 <br> <span> Technology is evolving rapidly. New <br> devices and
+                            applications. </span> </p>
+                </div>
+                <!-- col 3 -->
+                <div class="col-lg-3">
+                    <div class="shape_img2 text-start">
+                        <div class="blog_text">
+                            <p class="shape2Text">20 June/2020 <br>
+                                <span>New devices and applications come to the market.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- col 4 -->
+                <div class="col-lg-3" id="blogShape3">
+                    <div class="shape_img3">
+                        <div class="blog_text">
+                            <Every class="shape3Text">20 June/2020 <br> <span>Every da providing solutions to
+                                    problems.</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog -->
+
+    <!-- Start Contact Me -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row mb-5">
+                <!-- col 1 -->
+                <div class="col-lg-6">
+                    <div class="intro_text">
+                        <p>Contact Me</p>
+                        <div class="under_line"></div>
+                        <h4 style="font-weight: 500;">Let me know if you want to talk
+                            about a potential collaboration. I'm available for freelance work.</h4>
+                    </div>
+                </div>
+                <!-- col 2 -->
+                <div class="col-lg-6 d-grid justify-content-end">
+                    <a href="mailto:infoname@mail.com">infoname@mail.com</a>
+                </div>
+            </div>
+            <!--  -->
+            <!-- row 2 -->
+            <div class="row mt-5">
+                <form name="userForm">
+                    <h6 id="errorMessage" class="mt-3" style="color: red;"></h6>
+                    <!-- col 1 -->
+                    <div class="col-lg-12">
+                        <label for="inputUserName" class="form-label">What’s your name?</label>
+                        <input type="text" class="form-control" id="inputUserName" name="userName" autocomplete="name"
+                            required>
+                    </div>
+                    <!-- col 2 -->
+                    <div class="col-lg-12">
+                        <label for="inputUserEmail" class="form-label">Your email</label>
+                        <input type="email" class="form-control" id="inputUserEmail" name="userEmail"
+                            autocomplete="email" required>
+                    </div>
+                    <!-- col 3 -->
+                    <div class="col-lg-12">
+                        <label for="inputUserProject" class="form-label">Tell me about your
+                            project</label>
+                        <input type="text" class="form-control" id="inputUserProject" name="userProject"
+                            autocomplete="userProject" required>
+                    </div>
+                </form>
+            </div>
+            <!--  -->
+            <!-- row 3 -->
+            <div class="row mt-5 align-items-center">
+                <!-- col 1 -->
+                <div class="col-lg-6">
+                    <button class="btn btn-primary fw-medium" id="customMainButton" style="width: 200px; height: 60px;"
+                        onclick="validationForm()">Get a Quote</button>
+                </div>
+                <!-- col 2 -->
+                <div class="col-lg-6 d-flex justify-content-end gap-4">
+                    <i class="fa-solid fa-paperclip fa-lg" style="color: #637085;"></i> <i
+                        class="fa-solid fa-arrow-right fa-lg" style="color: #8643DC;"></i>
+                </div>
+                <!--  -->
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <!-- End Contact Me -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <p>Let’s be
+                Friends</p>
+            <div class="row my-5 justify-content-center" id="footerRow">
+                <!-- col 1 -->
+                <div class=" col-1">
+                    <div class="icon-bg">
+                        <img src="images/footer_img1.png" alt="not_found">
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col-1">
+                    <div class="icon-bg">
+                        <img src="images/footer_img2.png" alt="not_found">
+                    </div>
+                </div>
+                <!-- col 3 -->
+                <div class="col-1">
+                    <div class="icon-bg">
+                        <img src="images/footer_img3.png" alt="not_found">
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
